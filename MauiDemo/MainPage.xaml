@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiDemo.MainPage">
+
+    <ScrollView>
+        <StackLayout Orientation="Horizontal" MaximumHeightRequest="100">
+            <Button x:Name="btnMinus" Text="-1" Clicked="Num_Clicked"></Button>
+            <Label x:Name="lblCounter"></Label>
+            <Button x:Name="btnPlus" Text="1" Clicked="Num_Clicked"></Button>
+            <Button x:Name="btnPlus10" Text="10" Clicked="Num_Clicked"></Button>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
