@@ -6,26 +6,38 @@
     xmlns:local="clr-namespace:MauiDemo"
     xmlns:pages="clr-namespace:MauiDemo.Resources.Pages"
     Shell.FlyoutBehavior="Flyout">
-    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+    <TabBar FlyoutDisplayOptions="AsMultipleItems">
         <Tab Title="Grid">
             <ShellContent 
-                Title="Grid layout menu" 
+                Title="Grid layout item" 
                 ContentTemplate="{DataTemplate pages:GridPage}"
             />
         </Tab>
         <Tab Title="Stack">
             <ShellContent 
-                Title="Stack layout menu" 
+                Title="Stack layout item" 
                 ContentTemplate="{DataTemplate pages:StackPage}"
             />
         </Tab>
-    </FlyoutItem>
+    </TabBar>
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
     <ShellContent 
-        Title="Grid" 
+        Title="Stack layout item" 
+        ContentTemplate="{DataTemplate pages:StackPage}"
+    />
+    <ShellContent 
+        Title="Grid layout item" 
         ContentTemplate="{DataTemplate pages:GridPage}"
+    />
+    <ShellContent 
+        Title="Flex layout item" 
+        ContentTemplate="{DataTemplate pages:FlexPage}"
+    />
+    <ShellContent 
+        Title="Absolute layout item" 
+        ContentTemplate="{DataTemplate pages:AbsolutePage}"
     />
 </Shell>
