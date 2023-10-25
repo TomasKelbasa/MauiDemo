@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiDemo.Resources.Pages.GridPage"
              Title="GridPage">
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="100" />
@@ -15,8 +16,9 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Button Grid.Row="0" Grid.Column="0" Text="1"/>
+        <Button Grid.Row="1" Grid.Column="0" Text="1"/>
         <Button Grid.Row="2" Grid.Column="1" Text="2"/>
-        <Label Grid.Row="1" Grid.Column="1" Text="X"/>
+        <Label Grid.Row="2" Grid.Column="0" Text="X" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <Entry VerticalOptions="Center" HorizontalOptions="Center"/>
     </Grid>
 </ContentPage>
