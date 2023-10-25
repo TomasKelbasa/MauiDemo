@@ -5,7 +5,7 @@
              Title="GridPage">
     <VerticalStackLayout>
         <Label 
-            Text="Grid"
+            Text="Mřížka kapybar"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
     </VerticalStackLayout>

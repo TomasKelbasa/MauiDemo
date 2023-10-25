@@ -5,17 +5,35 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MauiDemo"
     xmlns:pages="clr-namespace:MauiDemo.Resources.Pages"
-    Shell.FlyoutBehavior="Disabled">
-    <FlyoutItem>
+    Shell.FlyoutBehavior="Flyout">
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         <Tab Title="First">
-            <ShellContent Title="Grid" ContentTemplate="{DataTemplate pages:GridPage}" />
-            <ShellContent Title="Stack" ContentTemplate="{DataTemplate pages:StackPage}" />
+            <ShellContent 
+                Title="Grid" 
+                ContentTemplate="{DataTemplate pages:GridPage}"
+            />
+            <ShellContent 
+                Title="Stack" 
+                ContentTemplate="{DataTemplate pages:StackPage}"
+            />
+        </Tab>
+        <Tab Title="Second">
+            <ShellContent 
+                Title="Grid" 
+                ContentTemplate="{DataTemplate pages:GridPage}"
+            />
+            <ShellContent 
+                Title="Stack" 
+                ContentTemplate="{DataTemplate pages:StackPage}"
+            />
         </Tab>
     </FlyoutItem>
-
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-
+    <ShellContent 
+        Title="Grid" 
+        ContentTemplate="{DataTemplate pages:GridPage}"
+    />
 </Shell>
